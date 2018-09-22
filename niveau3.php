@@ -24,7 +24,7 @@ apprendre la table de multiplication</a>
   <input type="number" class="form-control" id="name" placeholder="donner un chiffre"style="width:500px;">
 </form>
     <?php
-      
+      echo "bonjour";
     ?>
 </body>
 </html>

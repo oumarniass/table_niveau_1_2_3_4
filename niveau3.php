@@ -20,11 +20,16 @@ apprendre la table de multiplication</a>
 </p>
 </div>
 </div>
-<form action="niveau3.php" method="post" style="position:relative;top:100px;left:400px;">
-  <input type="number" class="form-control" id="name" placeholder="donner un chiffre"style="width:500px;">
+<form action="trait_niv3.php" method="post" style="position:relative;top:100px;left:400px;">
+  <input type="number" name="numeric1" class="form-control" id="name" placeholder="donner un chiffre"style="width:500px;">
+  <input type="submit" value="afficher" class="btn btn-default" style="position:relative;top:10px;">
 </form>
     <?php
-      echo "bonjour";
+     $_SESSION['nombre']=$_POST['numeric1'];
+     if(isset($_SESSION['nombre']))
+     {
+       echo "test".$_SESSION['nombre'];
+     }
     ?>
 </body>
 </html>
